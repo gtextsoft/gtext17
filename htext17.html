@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gtext Holding 17th Anniversary | Live Celebration 21 May 2025</title>
+  <meta name="description" content="Join us on 21 May 2025 for Gtext Holding's 17-year anniversary celebration. Explore our journey and hop into the live Zoom party." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            gtext: {
+              primary: '#8B1F41', /* Burgundy - Gtext logo text color */
+              accent: '#F58025', /* Orange - Gtext logo circle color */
+              dark: '#5A1428' /* Deep burgundy */
+            },
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --gtext-primary: #8B1F41; /* Burgundy */
+      --gtext-accent: #F58025; /* Orange */
+      --gtext-dark: #5A1428; /* Deep Burgundy */
+    }
+    
+    html, body {
+      scroll-behavior: smooth;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+      width: 100%;
+      max-width: 100vw;
+    }
+    
+    /* Fix horizontal scrolling by controlling all section widths */
+    section {
+      width: 100%;
+      max-width: 100vw;
+      overflow-x: hidden;
+    }
+    
+    /* Ensure all containers respect viewport width */
+    .container, .max-w-6xl, .max-w-5xl, .max-w-4xl, .max-w-3xl {
+      width: 100%;
+      max-width: calc(100vw - 2rem);
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+    
+    .hero-bg-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    
+    .scale-in {
+      animation: scale-in 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    
+    @keyframes scale-in {
+      0% { transform: scale(0.9); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    
+    .timeline-item {
+      position: relative;
+    }
+    
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background-color: var(--gtext-primary);
+      top: 0;
+      bottom: 0;
+      left: -20px;
+    }
+    
+    .stats-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    /* Fix for testimonials section */
+    .testimonial-card {
+      position: relative;
+      background: white;
+      transition: all 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow: visible;
+    }
+    
+    .testimonial-card:hover {
+      transform: scale(1.03);
+    }
+    
+    .testimonial-card .absolute {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      z-index: 10;
+    }
+    
+    .testimonial-card blockquote {
+      position: relative;
+      z-index: 5;
+    }
+    
+    /* Fix aspect ratio issues */
+    .aspect-w-16,
+    .aspect-h-9 {
+      position: relative;
+    }
+    
+    .aspect-w-16::before {
+      content: "";
+      display: block;
+      padding-bottom: 56.25%; /* 9/16 = 0.5625 */
+    }
+    
+    .aspect-w-16 > img,
+    .aspect-w-16 > .absolute {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+    
+    /* Improved Responsive fixes for PC */
+    @media (min-width: 1024px) {
+      body {
+        font-size: 16px;
+      }
+      
+      .max-w-6xl {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        box-sizing: border-box;
+      }
+      
+      .py-24 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+      
+      /* Fix grid layouts for better spacing */
+      .gap-8 {
+        gap: 2rem;
+      }
+      
+      .px-6 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      
+      /* Fix testimonial card height */
+      .testimonial-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .testimonial-card > div:first-child {
+        flex-grow: 1;
+      }
+      
+      /* Fix any overflowing elements */
+      .grid, .flex {
+        width: 100%;
+        max-width: 100%;
+      }
+      
+      /* Make sure images don't cause overflow */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    
+    @media (min-width: 1280px) {
+      .max-w-6xl {
+        max-width: 1200px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    }
+    
+    @media (min-width: 1536px) {
+      .max-w-6xl {
+        max-width: 1320px;
+      }
+      
+      body {
+        font-size: 18px;
+      }
+    }
+    
+    /* Fix for overflow issues */
+    .overflow-hidden {
+      overflow: visible !important;
+    }
+    
+    /* Fix for grid layouts on larger screens */
+    @media (min-width: 1024px) {
+      .lg\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      
+      .lg\:grid-cols-5 {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+      
+      .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      
+      /* Fix the contact section spacing */
+      .lg\:col-span-3 {
+        grid-column: span 3 / span 3;
+      }
+      
+      .lg\:col-span-2 {
+        grid-column: span 2 / span 2;
+      }
+    }
+    
+    /* Fix for timeline dots positioning */
+    @media (min-width: 768px) {
+      .hidden.md\:block.absolute {
+        display: block !important;
+      }
+      
+      /* Fix timeline layout */
+      .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    
+    /* Fix for images in testimonials */
+    .w-12.h-12.rounded-full.overflow-hidden img,
+    .w-10.h-10.rounded-full {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    /* Fix for contact form on larger screens */
+    @media (min-width: 1024px) {
+      .lg\:col-span-3.bg-gray-50 {
+        height: 100%;
+      }
+      
+      .bg-gtext-dark.text-white.p-8.rounded-xl.shadow-lg.h-full {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .bg-gtext-dark.text-white.p-8.rounded-xl.shadow-lg.h-full > div:last-child {
+        margin-top: auto;
+      }
+    }
+  </style>
+</head>
+<body class="font-sans antialiased bg-gray-50 text-gray-800">
+  <!-- Hero / Landing Section -->
+  <header class="relative min-h-screen flex flex-col text-white bg-gtext-dark hero-bg-pattern">
+    <!-- Background Image -->
+    <img src="https://cdn.guardian.ng/wp-content/uploads/2024/03/IMG-20240301-WA0014.jpg" alt="Modern skyline" class="absolute inset-0 w-full h-full object-cover opacity-80" />
+    
+    <!-- Gradient Overlay with improved colors -->
+    <div class="absolute inset-0 bg-gradient-to-b from-gtext-dark/90 via-gtext-dark/70 to-gtext-dark/95"></div>
+
+    <!-- Navigation Bar with mobile menu -->
+    <nav class="relative z-20 px-4 sm:px-6 py-4 sm:py-6">
+      <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <a href="#" class="flex items-center space-x-2">
+          <img src="img/gtextlogo.png" alt="Gtext Holding Logo" class="h-8 sm:h-10 md:h-12 drop-shadow-lg" />
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-4 lg:space-x-8">
+          <a href="#about" class="text-white hover:text-gtext-accent transition">About</a>
+          <a href="#timeline" class="text-white hover:text-gtext-accent transition">Timeline</a>
+          <a href="#impact" class="text-white hover:text-gtext-accent transition">Impact</a>
+          <a href="#contact" class="px-4 py-2 rounded-full bg-gtext-primary hover:bg-gtext-primary/90 transition shadow-md text-white">Contact Us</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden bg-gtext-dark/95 absolute left-0 right-0 z-20 mt-4 p-4 rounded-lg shadow-xl transform transition-all">
+        <div class="flex flex-col space-y-4">
+          <a href="#about" class="text-white hover:text-gtext-accent transition px-4 py-2">About</a>
+          <a href="#timeline" class="text-white hover:text-gtext-accent transition px-4 py-2">Timeline</a>
+          <a href="#impact" class="text-white hover:text-gtext-accent transition px-4 py-2">Impact</a>
+          <a href="#testimonials" class="text-white hover:text-gtext-accent transition px-4 py-2">Testimonials</a>
+          <a href="#contact" class="px-4 py-2 rounded-full bg-gtext-primary hover:bg-emerald-700 transition shadow-md text-white text-center">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Anniversary Banner -->
+    <div class="relative z-10 mx-auto w-full max-w-6xl">
+      <div class="flex justify-end px-6 py-2">
+        <div class="bg-gtext-accent/90 px-4 py-2 rounded-full text-gtext-dark font-medium shadow-lg animate-pulse-slow">
+          <i class="fas fa-calendar-alt mr-2"></i> 17th Anniversary • 21 May 2025
+        </div>
+      </div>
+    </div>
+
+    <!-- Landing Content with improved visual elements -->
+    <div class="relative z-10 flex-grow flex items-center">
+      <div class="container max-w-5xl mx-auto text-center px-6" data-aos="fade-up">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-lg mb-8 bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-300">
+          17 Years of Building Dreams
+        </h1>
+        <p class="text-lg md:text-xl lg:text-2xl mb-12 italic text-gray-200 max-w-3xl mx-auto">
+          From vision to legacy: Celebrating a journey of transformation, innovation, and community building.
+        </p>
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-5">
+          <a href="#timeline" class="group px-6 sm:px-8 py-4 rounded-full bg-gtext-primary hover:bg-gtext-primary/90 transition shadow-xl text-white text-lg flex items-center justify-center space-x-2">
+            <span>Explore the Journey</span>
+            <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+          </a>
+          <a href="https://us06web.zoom.us/j/83568093895?pwd=wAv3c70oalZfjL0bfm2bwdxmZ17QOr.1" target="_blank" rel="noopener noreferrer" class="group px-6 sm:px-8 py-4 rounded-full bg-indigo-600 hover:bg-indigo-700 transition shadow-xl text-white text-lg flex items-center justify-center space-x-2 animate-pulse">
+            <i class="fas fa-video"></i>
+            <span>Join Live Zoom (10:00 AM WAT)</span>
+          </a>
+        </div>
+        
+        <!-- Achievement badges -->
+        <div class="mt-16 flex flex-wrap justify-center gap-6">
+          <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full flex items-center space-x-2">
+            <i class="fas fa-building text-gtext-accent"></i>
+            <span>50+ Estates</span>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full flex items-center space-x-2">
+            <i class="fas fa-globe-africa text-gtext-accent"></i>
+            <span>17 Countries</span>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full flex items-center space-x-2">
+            <i class="fas fa-home text-gtext-accent"></i>
+            <span>37,000+ Homes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll down indicator -->
+    <div class="relative z-10 pb-10 text-center">
+      <a href="#about" class="inline-block text-white/80 hover:text-white animate-bounce">
+        <span class="sr-only">Scroll Down</span>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- About Section with improved design -->
+  <section id="about" class="py-12 sm:py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <!-- Left side with image -->
+        <div class="w-full md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+          <div class="relative">
+            <div class="absolute -top-4 -left-4 w-20 h-20 md:w-24 md:h-24 bg-gtext-accent/20 rounded-lg z-0"></div>
+            <div class="absolute -bottom-4 -right-4 w-24 h-24 md:w-32 md:h-32 bg-gtext-primary/20 rounded-lg z-0"></div>
+            <img 
+              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80" 
+              alt="Modern real estate development" 
+              class="w-full h-auto object-cover rounded-lg shadow-xl relative z-10"
+            />
+          </div>
+        </div>
+        
+        <!-- Right side with content -->
+        <div class="w-full md:w-1/2" data-aos="fade-left">
+          <div class="inline-block px-3 py-1 bg-gtext-primary/10 text-gtext-primary rounded-full text-sm font-semibold mb-4 sm:mb-6">
+            ABOUT GTEXT HOLDING
+          </div>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-800">
+            <span class="text-gtext-primary">17 Years</span> of Excellence <br class="hidden sm:inline">in Real Estate
+          </h2>
+          
+          <p class="text-base sm:text-lg leading-relaxed text-gray-600 mb-4 sm:mb-6">
+            We began in 2008 with nothing but dusty shoes, dog-eared blueprints, and faith that moved more than mountains—it moved banks. Today we're a constellation of companies turning empty land into lively communities across Africa, Europe, and the Gulf.
+          </p>
+          
+          <p class="text-base sm:text-lg leading-relaxed text-gray-600 mb-6 sm:mb-8">
+            Our compass? Tradition. Our engine? Innovation. Our why? Helping families unlock prosperity, one title deed at a time.
+          </p>
+          
+          <!-- Feature boxes -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gray-50 p-4 rounded-lg shadow-sm flex items-start space-x-3">
+              <div class="rounded-full bg-gtext-primary/20 p-2 text-gtext-primary">
+                <i class="fas fa-home"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800">Quality Living</h3>
+                <p class="text-sm text-gray-600">Building homes that last generations</p>
+              </div>
+            </div>
+            
+            <div class="bg-gray-50 p-4 rounded-lg shadow-sm flex items-start space-x-3">
+              <div class="rounded-full bg-gtext-primary/20 p-2 text-gtext-primary">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800">Sustainability</h3>
+                <p class="text-sm text-gray-600">Eco-friendly development practices</p>
+              </div>
+            </div>
+            
+            <div class="bg-gray-50 p-4 rounded-lg shadow-sm flex items-start space-x-3">
+              <div class="rounded-full bg-gtext-primary/20 p-2 text-gtext-primary">
+                <i class="fas fa-users"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800">Community</h3>
+                <p class="text-sm text-gray-600">Fostering connections and growth</p>
+              </div>
+            </div>
+            
+            <div class="bg-gray-50 p-4 rounded-lg shadow-sm flex items-start space-x-3">
+              <div class="rounded-full bg-gtext-primary/20 p-2 text-gtext-primary">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-800">Global Vision</h3>
+                <p class="text-sm text-gray-600">Building across continents</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider with company stats -->
+  <section class="bg-gtext-dark py-12 text-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div data-aos="fade-up" data-aos-delay="0">
+          <div class="text-4xl font-bold text-gtext-accent mb-2">17</div>
+          <div class="text-gray-300">Years of Excellence</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <div class="text-4xl font-bold text-gtext-accent mb-2">50+</div>
+          <div class="text-gray-300">Estates Delivered</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <div class="text-4xl font-bold text-gtext-accent mb-2">17</div>
+          <div class="text-gray-300">Countries Served</div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300">
+          <div class="text-4xl font-bold text-gtext-accent mb-2">10k+</div>
+          <div class="text-gray-300">Jobs Created</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section with modern vertical design -->
+  <section id="timeline" class="py-12 sm:py-16 md:py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <!-- Section Header -->
+      <div class="text-center mb-8 sm:mb-16" data-aos="fade-up">
+        <div class="inline-block px-3 py-1 bg-gtext-primary/10 text-gtext-primary rounded-full text-sm font-semibold mb-4">
+          OUR JOURNEY
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-800">
+          17 Years of <span class="text-gtext-primary">Milestones</span>
+        </h2>
+        <p class="max-w-3xl mx-auto text-base sm:text-lg text-gray-600">
+          From humble beginnings to international presence, our journey has been defined by vision, perseverance, and community impact.
+        </p>
+      </div>
+      
+      <!-- Vertical Timeline -->
+      <div class="relative">
+        <!-- Vertical Line -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gtext-primary h-full z-0 hidden md:block"></div>
+        
+        <!-- Timeline Items - Smaller gap on mobile -->
+        <div class="space-y-8 md:space-y-12">
+          <!-- 2008 -->
+          <div class="relative md:grid md:grid-cols-2 md:gap-8 items-center" data-aos="fade-up">
+            <div class="md:text-right md:pr-12">
+              <div class="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-gtext-primary rounded-full border-4 border-white z-10"></div>
+              <span class="inline-block bg-gtext-primary text-white px-4 py-1 rounded-full text-sm font-bold mb-4">2008</span>
+              <h3 class="text-2xl font-bold mb-2 text-gray-800">The Beginning</h3>
+              <p class="text-gray-600">Gtext Homes is born in a single-room office in Lagos. <span class="italic">"If the roof leaks, we fix it—if the dream leaks, we double-seal."</span></p>
+            </div>
+            <div class="md:pl-12 mt-6 md:mt-0">
+              <img 
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                alt="Small office space" 
+                class="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+          
+          <!-- 2010 -->
+          <div class="relative md:grid md:grid-cols-2 md:gap-8 items-center" data-aos="fade-up">
+            <div class="md:pl-12 order-last md:order-first">
+              <img 
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                alt="Emerald Garden City" 
+                class="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+            <div class="md:text-left md:pl-12 mt-6 md:mt-0">
+              <div class="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-gtext-primary rounded-full border-4 border-white z-10"></div>
+              <span class="inline-block bg-gtext-primary text-white px-4 py-1 rounded-full text-sm font-bold mb-4">2010</span>
+              <h3 class="text-2xl font-bold mb-2 text-gray-800">First Estate Launch</h3>
+              <p class="text-gray-600">First estate launch, <em>Emerald Garden City.</em> Proof of concept → proof of courage.</p>
+            </div>
+          </div>
+          
+          <!-- 2013 -->
+          <div class="relative md:grid md:grid-cols-2 md:gap-8 items-center" data-aos="fade-up">
+            <div class="md:text-right md:pr-12">
+              <div class="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-gtext-primary rounded-full border-4 border-white z-10"></div>
+              <span class="inline-block bg-gtext-primary text-white px-4 py-1 rounded-full text-sm font-bold mb-4">2013</span>
+              <h3 class="text-2xl font-bold mb-2 text-gray-800">First Billion</h3>
+              <p class="text-gray-600">Crossed ₦1 billion in sales. Mom finally stops worrying.</p>
+            </div>
+            <div class="md:pl-12 mt-6 md:mt-0">
+              <img 
+                src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                alt="Business success" 
+                class="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+          
+          <!-- 2016 -->
+          <div class="relative md:grid md:grid-cols-2 md:gap-8 items-center" data-aos="fade-up">
+            <div class="md:pl-12 order-last md:order-first">
+              <img 
+                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                alt="City skyline" 
+                class="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+            <div class="md:text-left md:pl-12 mt-6 md:mt-0">
+              <div class="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-gtext-primary rounded-full border-4 border-white z-10"></div>
+              <span class="inline-block bg-gtext-primary text-white px-4 py-1 rounded-full text-sm font-bold mb-4">2016</span>
+              <h3 class="text-2xl font-bold mb-2 text-gray-800">National Expansion</h3>
+              <p class="text-gray-600">Expansion to Abuja & Port Harcourt. From one city's skyline to three.</p>
+            </div>
+          </div>
+          
+          <!-- 2018 -->
+          <div class="relative md:grid md:grid-cols-2 md:gap-8 items-center" data-aos="fade-up">
+            <div class="md:text-right md:pr-12">
+              <div class="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-gtext-primary rounded-full border-4 border-white z-10"></div>
+              <span class="inline-block bg-gtext-primary text-white px-4 py-1 rounded-full text-sm font-bold mb-4">2018</span>
+              <h3 class="text-2xl font-bold mb-2 text-gray-800">Gtext Cares Launch</h3>
+              <p class="text-gray-600">CSR arm <em>Gtext Cares</em> feeds 100K people. Impact > income.</p>
+            </div>
+            <div class="md:pl-12 mt-6 md:mt-0">
+              <img 
+                src="https://dailytrust.com/wp-content/uploads/2023/07/416024fd-579d-4716-bdb8-3cd6c4eebe96.jpg" 
+                alt="Community support" 
+                class="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+          
+          <!-- 2020 -->
+          <div class="relative md:grid md:grid-cols-2 md:gap-8 items-center" data-aos="fade-up">
+            <div class="md:pl-12 order-last md:order-first">
+              <img 
+                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                alt="Digital workspace" 
+                class="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+            <div class="md:text-left md:pl-12 mt-6 md:mt-0">
+              <div class="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-gtext-primary rounded-full border-4 border-white z-10"></div>
+              <span class="inline-block bg-gtext-primary text-white px-4 py-1 rounded-full text-sm font-bold mb-4">2020</span>
+              <h3 class="text-2xl font-bold mb-2 text-gray-800">Digital Transformation</h3>
+              <p class="text-gray-600">Digital pivot during pandemic; 70% of sales go online. "Zoom calls, zero excuses."</p>
+            </div>
+          </div>
+          
+          <!-- 2023 -->
+          <div class="relative md:grid md:grid-cols-2 md:gap-8 items-center" data-aos="fade-up">
+            <div class="md:text-right md:pr-12">
+              <div class="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-gtext-primary rounded-full border-4 border-white z-10"></div>
+              <span class="inline-block bg-gtext-primary text-white px-4 py-1 rounded-full text-sm font-bold mb-4">2023</span>
+              <h3 class="text-2xl font-bold mb-2 text-gray-800">Global Expansion</h3>
+              <p class="text-gray-600">Dubai & London offices open. Passport stamps ≠ limits—just checkpoints.</p>
+            </div>
+            <div class="md:pl-12 mt-6 md:mt-0">
+              <img 
+                src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                alt="Dubai skyline" 
+                class="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+          
+          <!-- 2025 -->
+          <div class="relative md:grid md:grid-cols-2 md:gap-8 items-center" data-aos="fade-up">
+            <div class="md:pl-12 order-last md:order-first">
+              <img 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                alt="Global presence" 
+                class="w-full h-64 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+            <div class="md:text-left md:pl-12 mt-6 md:mt-0">
+              <div class="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-gtext-accent rounded-full border-4 border-white z-10"></div>
+              <span class="inline-block bg-gtext-accent text-gray-800 px-4 py-1 rounded-full text-sm font-bold mb-4">2025</span>
+              <h3 class="text-2xl font-bold mb-2 text-gray-800">17th Anniversary</h3>
+              <p class="text-gray-600">17 countries served, 50+ estates delivered. The world is now our neighbourhood.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Call to Action -->
+      <div class="mt-16 text-center" data-aos="fade-up">
+        <a href="#contact" class="inline-flex items-center px-8 py-4 rounded-full bg-gtext-primary hover:bg-emerald-700 transition shadow-xl text-white text-lg">
+          <span>Be Part of Our Future</span>
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Section with improved design -->
+  <section id="impact" class="py-12 sm:py-16 md:py-24 bg-white relative">
+
+      <!-- Background Elements -->
+      <div class="absolute left-0 right-0 top-0 bottom-0 pointer-events-none opacity-5 overflow-hidden">
+        <div class="absolute -left-20 sm:-left-40 -top-20 sm:-top-40 w-60 sm:w-80 h-60 sm:h-80 bg-gtext-primary rounded-full"></div>
+        <div class="absolute -right-20 sm:-right-40 top-40 sm:top-60 w-72 sm:w-96 h-72 sm:h-96 bg-gtext-accent rounded-full"></div>
+      </div>
+    
+      <!-- Section Header -->
+      <div class="text-center mb-8 sm:mb-16 relative" data-aos="fade-up">
+        <div class="inline-block px-3 py-1 bg-gtext-primary/10 text-gtext-primary rounded-full text-sm font-semibold mb-4">
+          OUR IMPACT
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-800">
+          Making a <span class="text-gtext-primary">Difference</span>
+        </h2>
+        <p class="max-w-3xl mx-auto text-base sm:text-lg text-gray-600">
+          Our success is measured not just in properties developed, but in lives improved and communities transformed.
+        </p>
+      </div>
+      
+      <!-- Impact Cards with fixed grid layout -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Housing Units -->
+        <div class="group relative bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="0">
+          <div class="absolute top-0 left-0 w-2 h-full bg-gtext-primary group-hover:w-full opacity-20 transition-all duration-500"></div>
+          <div class="relative">
+            <div class="bg-gtext-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-gtext-primary/20 transition-all duration-300">
+              <i class="fas fa-home text-2xl text-gtext-primary"></i>
+            </div>
+            <h3 class="text-4xl font-extrabold mb-4 text-gray-800 flex items-baseline">
+              37,000<span class="text-xl text-gtext-primary ml-1">+</span>
+            </h3>
+            <p class="text-xl text-gray-600 font-medium">Housing Units Delivered</p>
+            <p class="mt-4 text-gray-500">Creating homes that bring comfort, security, and pride to thousands of families across continents.</p>
+          </div>
+        </div>
+        
+        <!-- Portfolio Value -->
+        <div class="group relative bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+          <div class="absolute top-0 left-0 w-2 h-full bg-gtext-primary group-hover:w-full opacity-20 transition-all duration-500"></div>
+          <div class="relative">
+            <div class="bg-gtext-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-gtext-primary/20 transition-all duration-300">
+              <i class="fas fa-chart-line text-2xl text-gtext-primary"></i>
+            </div>
+            <h3 class="text-4xl font-extrabold mb-4 text-gray-800 flex items-baseline">
+              $1.2<span class="text-xl text-gtext-primary ml-1">B</span>
+            </h3>
+            <p class="text-xl text-gray-600 font-medium">Real Estate Portfolio</p>
+            <p class="mt-4 text-gray-500">Building sustainable value through strategic development and long-term investment in property assets.</p>
+          </div>
+        </div>
+        
+        <!-- Livelihoods -->
+        <div class="group relative bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+          <div class="absolute top-0 left-0 w-2 h-full bg-gtext-primary group-hover:w-full opacity-20 transition-all duration-500"></div>
+          <div class="relative">
+            <div class="bg-gtext-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-gtext-primary/20 transition-all duration-300">
+              <i class="fas fa-users text-2xl text-gtext-primary"></i>
+            </div>
+            <h3 class="text-4xl font-extrabold mb-4 text-gray-800 flex items-baseline">
+              10,000<span class="text-xl text-gtext-primary ml-1">+</span>
+            </h3>
+            <p class="text-xl text-gray-600 font-medium">Livelihoods Supported</p>
+            <p class="mt-4 text-gray-500">Creating economic opportunities through employment, contracts, and empowerment across our value chain.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Additional Impact Metrics -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10" data-aos="fade-up">
+        <div class="bg-gray-50 p-6 rounded-xl flex items-center space-x-4 hover:bg-gray-100 transition-all duration-300">
+          <div class="rounded-full bg-gtext-primary/20 p-3 text-gtext-primary">
+            <i class="fas fa-briefcase text-2xl"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-800">500</h3>
+            <p class="text-gray-600">Direct Jobs</p>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-xl flex items-center space-x-4 hover:bg-gray-100 transition-all duration-300">
+          <div class="rounded-full bg-gtext-primary/20 p-3 text-gtext-primary">
+            <i class="fas fa-handshake text-2xl"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-800">42</h3>
+            <p class="text-gray-600">Community Projects</p>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-xl flex items-center space-x-4 hover:bg-gray-100 transition-all duration-300">
+          <div class="rounded-full bg-gtext-primary/20 p-3 text-gtext-primary">
+            <i class="fas fa-hand-holding-heart text-2xl"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-800">₦150m</h3>
+            <p class="text-gray-600">Donated to Charity (2024)</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Impact Quote -->
+      <div class="mt-16 text-center" data-aos="fade-up">
+        <blockquote class="max-w-3xl mx-auto">
+          <p class="text-2xl italic text-gray-600 before:content-['"'] after:content-['"'] before:text-4xl after:text-4xl before:mr-1 after:ml-1">
+            The best metric? Families that call our bricks 'home' and communities that thrive because we built with purpose.
+          </p>
+          <cite class="mt-6 block text-gtext-primary font-semibold">— Stephen Akintayo, Founder & CEO</cite>
+        </blockquote>
+      </div>
+      
+      <!-- CTA Button -->
+      <div class="mt-12 text-center" data-aos="fade-up">
+        <a href="#testimonials" class="inline-flex items-center px-6 py-3 rounded-lg bg-gtext-primary/10 hover:bg-gtext-primary/20 text-gtext-primary font-medium transition-all duration-300">
+          <span>See what our customers say</span>
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- <section id="testimonials" class="py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+    
+      <div class="text-center mb-16 relative" data-aos="fade-up">
+        <div class="inline-block px-3 py-1 bg-gtext-primary/10 text-gtext-primary rounded-full text-sm font-semibold mb-4">
+          TESTIMONIALS
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-gray-800">
+          Voices from the <span class="text-gtext-primary">Tribe</span>
+        </h2>
+        <p class="max-w-3xl mx-auto text-gray-600 text-lg">
+          Our greatest pride comes from the stories of those whose lives we've touched with our vision of accessible quality housing.
+        </p>
+      </div>
+      
+    
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+       
+        <div class="bg-white rounded-xl shadow-lg overflow-visible" data-aos="fade-up" data-aos-delay="0">
+          <div class="relative p-8">
+           
+            <div class="absolute -top-4 -left-4 bg-gtext-primary text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg z-10">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            
+            
+            <div class="flex items-center mb-4 mt-3">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+            </div>
+            
+            
+            <blockquote class="text-lg text-gray-600 italic leading-relaxed mb-8">
+              "Gtext turned my 'someday house' into a 'this-year house.' Their installment plans made homeownership accessible when I thought it would take another decade."
+            </blockquote>
+            
+            
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Tosin O." class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Tosin Odukoya</h4>
+                <p class="text-gtext-primary text-sm">First-time homeowner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="bg-white rounded-xl shadow-lg overflow-visible" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative p-8">
+            
+            <div class="absolute -top-4 -left-4 bg-gtext-primary text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg z-10">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            
+           
+            <div class="flex items-center mb-4 mt-3">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star-half-alt text-yellow-400"></i>
+            </div>
+            
+            
+            <blockquote class="text-lg text-gray-600 italic leading-relaxed mb-8">
+              "They build like artisans, not contractors. Two years in my Gtext home and not a single major repair needed. The attention to detail speaks volumes about their standards."
+            </blockquote>
+            
+            
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Emeka N." class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Emeka Nwosu</h4>
+                <p class="text-gtext-primary text-sm">Real estate investor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="bg-white rounded-xl shadow-lg overflow-visible" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative p-8">
+            
+            <div class="absolute -top-4 -left-4 bg-gtext-primary text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg z-10">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            
+            
+            <div class="flex items-center mb-4 mt-3">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+            </div>
+            
+           
+            <blockquote class="text-lg text-gray-600 italic leading-relaxed mb-8">
+              "As an overseas investor, I needed a company I could trust without being physically present. Gtext's transparent processes and commitment to excellence made that possible."
+            </blockquote>
+            
+            
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sarah J." class="w-full h-full object-cover" />
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                <p class="text-gtext-primary text-sm">Diaspora investor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="mt-16 bg-white p-6 rounded-xl shadow-xl" data-aos="fade-up">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="w-full md:w-1/2 relative">
+            <div class="relative pb-[56.25%] h-0 rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" 
+                alt="Video testimonial cover" 
+                class="absolute top-0 left-0 w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-16 h-16 rounded-full bg-gtext-primary flex items-center justify-center text-white cursor-pointer hover:bg-gtext-accent transition-colors duration-300 hover:scale-110 transform">
+                  <i class="fas fa-play text-xl"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Hear From Our Community</h3>
+            <p class="text-gray-600 mb-6">Watch real stories from real homeowners about their journey with Gtext Holding and how our developments have transformed their lives.</p>
+            <div class="flex items-center">
+              <div class="flex -space-x-4 mr-4">
+                <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/54.jpg" alt="User 1">
+                <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/63.jpg" alt="User 2">
+                <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/82.jpg" alt="User 3">
+              </div>
+              <span class="text-gray-500">Join our 1,000+ happy homeowners</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  -->
+
+
+  <!-- Contact Section (New) -->
+  <section id="contact" class="py-12 sm:py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <!-- Section Header -->
+      <div class="text-center mb-8 sm:mb-16" data-aos="fade-up">
+        <div class="inline-block px-3 py-1 bg-gtext-primary/10 text-gtext-primary rounded-full text-sm font-semibold mb-4">
+          GET IN TOUCH
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-gray-800">
+          Ready to <span class="text-gtext-primary">Build Your Dream?</span>
+        </h2>
+        <p class="max-w-3xl mx-auto text-base sm:text-lg text-gray-600">
+          Whether you're looking to invest, purchase a home, or simply learn more about our offerings, our team is ready to help.
+        </p>
+      </div>
+      
+      <!-- Contact Content -->
+      <div class="flex justify-center">
+        <!-- Contact Information -->
+        <div class="lg:col-span-2 max-w-2xl" data-aos="fade-left">
+          <div class="bg-gtext-dark text-white p-8 rounded-xl shadow-lg h-full">
+            <h3 class="text-2xl font-bold mb-8 text-gtext-accent text-center">Contact Information</h3>
+            
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="bg-gtext-accent/20 rounded-full p-3 mr-4">
+                  <i class="fas fa-map-marker-alt text-gtext-accent"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">Headquarters</h4>
+                  <p class="text-gray-300 mt-1">Gtext House, Admiralty Way, Lekki Phase 1, Lagos, Nigeria</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-gtext-accent/20 rounded-full p-3 mr-4">
+                  <i class="fas fa-phone text-gtext-accent"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">Phone</h4>
+                  <p class="text-gray-300 mt-1">+234 (0) 800 GTEXTHOMES</p>
+                  <p class="text-gray-300">+234 (0) 907 932 8888</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-gtext-accent/20 rounded-full p-3 mr-4">
+                  <i class="fas fa-envelope text-gtext-accent"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">Email</h4>
+                  <p class="text-gray-300 mt-1">info@gtextholdings.com</p>
+                  <p class="text-gray-300">invest@gtextholdings.com</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="bg-gtext-accent/20 rounded-full p-3 mr-4">
+                  <i class="fas fa-clock text-gtext-accent"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white">Office Hours</h4>
+                  <p class="text-gray-300 mt-1">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                  <p class="text-gray-300">Saturday: 9:00 AM - 3:00 PM</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Social Media -->
+            <div class="mt-10">
+              <h4 class="font-semibold text-white mb-4 text-center">Connect With Us</h4>
+              <div class="flex justify-center space-x-4">
+                <a href="#" class="bg-gtext-accent/20 hover:bg-gtext-accent/40 text-gtext-accent p-3 rounded-full transition-colors duration-300">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="bg-gtext-accent/20 hover:bg-gtext-accent/40 text-gtext-accent p-3 rounded-full transition-colors duration-300">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="bg-gtext-accent/20 hover:bg-gtext-accent/40 text-gtext-accent p-3 rounded-full transition-colors duration-300">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="bg-gtext-accent/20 hover:bg-gtext-accent/40 text-gtext-accent p-3 rounded-full transition-colors duration-300">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="bg-gtext-accent/20 hover:bg-gtext-accent/40 text-gtext-accent p-3 rounded-full transition-colors duration-300">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gtext-dark text-white pt-12 pb-6 sm:pt-16 sm:pb-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+        <!-- Company Info -->
+        <div>
+          <img src="img/gtextlogo.png" alt="Gtext Holding Logo" class="h-10 mb-6" />
+          <p class="text-gray-400 mb-6">Building dreams across continents. 17 years of transforming lives through quality real estate development.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-gtext-accent transition-colors duration-300">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gtext-accent transition-colors duration-300">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gtext-accent transition-colors duration-300">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gtext-accent transition-colors duration-300">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-6 text-gtext-accent">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+            <li><a href="#timeline" class="text-gray-400 hover:text-white transition-colors duration-300">Our Journey</a></li>
+            <li><a href="#impact" class="text-gray-400 hover:text-white transition-colors duration-300">Our Impact</a></li>
+            <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+            <li><a href="/invest" class="text-gray-400 hover:text-white transition-colors duration-300">Investment Opportunities</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <!-- Our Projects -->
+        <div>
+          <h3 class="text-lg font-semibold mb-6 text-gtext-accent">Our Projects</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Emerald Garden City</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Jasper Heights</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Blue Bay Residences</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Diamond Estate</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Sapphire Apartments</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">View All Projects</a></li>
+          </ul>
+        </div>
+        
+        <!-- Newsletter -->
+        <div>
+          <h3 class="text-lg font-semibold mb-6 text-gtext-accent">Stay Updated</h3>
+          <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates on projects and investment opportunities.</p>
+          <form class="flex flex-col space-y-3">
+            <input type="email" placeholder="Your email address" class="px-4 py-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-gtext-accent text-white">
+            <button type="submit" class="px-4 py-3 bg-gtext-accent hover:bg-yellow-500 text-gtext-dark font-medium rounded-lg transition-colors duration-300">Subscribe Now</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Bottom Footer -->
+      <div class="border-t border-gray-800 pt-8 mt-8">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+          <div class="mb-4 md:mb-0">
+            <p class="text-gray-400">&copy; 2025 Gtext Holding. All rights reserved.</p>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript for functionality -->
+  <script>
+    // Wait for DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+      
+      // Initialize AOS animations with improved settings for performance
+      if (typeof AOS !== 'undefined') {
+        AOS.init({
+          duration: 800,
+          once: true,
+          offset: 100,
+          delay: 50,
+          startEvent: 'DOMContentLoaded',
+          disable: window.innerWidth < 768 ? true : false, // Only enable on larger screens
+          mirror: false,
+          anchorPlacement: 'top-bottom'
+        });
+      }
+      
+      // Fix video aspect ratio if needed
+      const aspectContainers = document.querySelectorAll('.pb-[56.25%]');
+      aspectContainers.forEach(container => {
+        const img = container.querySelector('img');
+        if (img) {
+          img.style.position = 'absolute';
+          img.style.width = '100%';
+          img.style.height = '100%';
+          img.style.objectFit = 'cover';
+        }
+      });
+      
+      // Fix layout issues caused by hidden elements
+      document.querySelectorAll('.hidden.md\\:block').forEach(element => {
+        if (window.innerWidth >= 768) {
+          element.classList.remove('hidden');
+        }
+      });
+      
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            // Close mobile menu if open
+            if (mobileMenu) {
+              mobileMenu.classList.add('hidden');
+            }
+            
+            // Calculate header height for offset
+            const headerHeight = document.querySelector('header nav').offsetHeight;
+            
+            // Scroll to target with offset
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+            
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+    
+    // Ensure images are loaded properly and fix any layout shifts
+    window.addEventListener('load', function() {
+      // Fix any layout issues after everything is loaded
+      document.querySelectorAll('img').forEach(img => {
+        if (img.complete) {
+          img.classList.add('loaded');
+        } else {
+          img.addEventListener('load', function() {
+            img.classList.add('loaded');
+          });
+        }
+      });
+      
+      // Refresh AOS to handle any layout shifts
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
+      
+      // Fix testimonial card heights to be uniform on desktop
+      if (window.innerWidth >= 1024) {
+        const cards = document.querySelectorAll('.testimonial-card');
+        let maxHeight = 0;
+        
+        cards.forEach(card => {
+          const height = card.offsetHeight;
+          if (height > maxHeight) {
+            maxHeight = height;
+          }
+        });
+        
+        cards.forEach(card => {
+          card.style.minHeight = maxHeight + 'px';
+        });
+      }
+    });
+    
+    // Handle window resize events
+    window.addEventListener('resize', function() {
+      // Refresh AOS on resize
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
+      
+      // Update mobile menu visibility based on screen size
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu && window.innerWidth >= 768) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
